@@ -95,6 +95,7 @@
 
         <div class="row">
 
+        
         <table border=0 cellpadding=5 cellspacing=0>
       <tr>
         <td>Tanggal</td>
@@ -133,10 +134,7 @@
 
         <div class="row">
 
-            <form class="navbar-form navbar-left" role="search">
-  <div class="form-group">
-    <input type="text" class="form-control" placeholder="Cari Obat">
-  </div>
+            <form class="navbar-form navbar-left" >
   
   <a class="btn btn-success" data-toggle="modal" data-target="#edit" role="button">Tambah Obat</a>
 </form>    
@@ -304,6 +302,321 @@
 </div>
 
 
+          <!-- Modal Edit -->
+<div class="modal fade" id="edit" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title" id="myModalLabel">Tambah Beli Obat</h4>
+      </div>
+      <div class="modal-body">
+      
+       <table id="lookup" class="table table-bordered table-hover table-striped">
+                        
+
+                            
+                            <thead>
+                                <tr>
+                                    <th>No</th>
+                                      <th>Kode Obat</th>
+                                        <th>Nama Obat</th>
+                                      <th>Harga</th>
+                                      <th>Keterangan</th>
+                                      <th>Aksi</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                
+                                <tr>
+                                  <td>1.</td>
+                                  <td>HCI-0144</td>
+                                  <td>Biogesic</td>
+                                  <td>Rp. 3.000</td>
+                                  <td>Tersedia</td>
+                                  <td>
+                                  <input id="checkbox1"  type="checkbox">Tambah
+                                  </td>
+
+
+
+
+                              </tr>
+                              <tr>
+                                  <td>2.</td>
+                                  <td>HCI-0189</td>
+                                  <td>Paracetamol</td>
+                                  <td>Rp. 4.000</td>
+                                  <td>Tersedia</td>
+                                  <td>
+                                  <input id="checkbox1"  type="checkbox">Tambah
+                                  </td>
+
+                              </tr>
+                              <tr>
+                                  <td>3.</td>
+                                  <td>HCI-0129</td>
+                                  <td>OBH </td>
+                                  <td>Rp. 15.000</td>
+                                  <td>Tersedia</td>
+                                  <td>
+                                  <input id="checkbox1"  type="checkbox">Tambah
+                                  </td>
+                              </tr>
+                              <tr>
+                                  <td>4.</td>
+                                  <td>HCI-0145</td>
+                                  <td>Sanmol</td>
+                                  <td>Rp. 3.000</td>
+                                  <td>Kosong</td>
+                                  <td>
+                                  <input id="checkbox1"  type="checkbox">Tambah
+                                  </td>
+                              </tr>
+                              <tr>
+                                  <td>5.</td>
+                                  <td>HCI-0156</td>
+                                  <td>Panadol</td>
+                                  <td>Rp. 4.000</td>
+                                  <td>Tersedia</td>
+                                  <td>
+                                  <input id="checkbox1"  type="checkbox">Tambah
+                                  </td>
+                              </tr>
+                              <tr>
+                                  <td>6.</td>
+                                  <td>HCI-0177</td>
+                                  <td>Sangobion</td>
+                                  <td>Rp. 15.000</td>
+                                  <td>Kosong</td>
+                                  <td>
+                                  <input id="checkbox1"  type="checkbox">Tambah
+                                  </td>
+                              </tr>
+                              <tr>
+                                  <td>7.</td>
+                                  <td>HCI-0222</td>
+                                  <td>Sanaflu</td>
+                                  <td>Rp. 5.000</td>
+                                  <td>Tersedia</td>
+                                  <td>
+                                  <input id="checkbox1"  type="checkbox">Tambah
+                                  </td>
+                              </tr>
+                              <tr>
+                                  <td>8.</td>
+                                  <td>HCI-0229</td>
+                                  <td>Vicks Balsem</td>
+                                  <td>Rp. 9.500</td>
+                                  <td>Tersedia</td>
+                                  <td>
+                                  <input id="checkbox1"  type="checkbox">Tambah
+                                  </td>
+                              </tr>
+                              <tr>
+                                  <td>9.</td>
+                                  <td>HCI-0249</td>
+                                  <td>Procold</td>
+                                  <td>Rp. 4.000</td>
+                                  <td>Tersedia</td>
+                                  <td>
+                                  <input id="checkbox1"  type="checkbox">Tambah
+                                  </td>
+                              </tr>
+                              <tr>
+                                  <td>10.</td>
+                                  <td>HCI-0521</td>
+                                  <td>Ambeven</td>
+                                  <td>Rp. 18.000</td>
+                                  <td>Tersedia</td>
+                                  <td>
+                                  <input id="checkbox1"  type="checkbox">Tambah
+                                  </td>
+                              </tr>
+                              <tr>
+                                  <td>11.</td>
+                                  <td>HCI-0178</td>
+                                  <td>Albothil 10</td>
+                                  <td>Rp. 31.000</td>
+                                  <td>Kosong</td>
+                                  <td>
+                                  <input id="checkbox1"  type="checkbox">Tambah
+                                  </td>
+                              </tr>
+                              <tr>
+                                  <td>12.</td>
+                                  <td>HCI-0224</td>
+                                  <td>Ranitidine 150 mg botol</td>
+                                  <td>Rp. 125.000</td>
+                                  <td>Tersedia</td>
+                                  <td>
+                                  <input id="checkbox1"  type="checkbox">Tambah
+                                  </td>
+                              </tr>
+                              <tr>
+                                  <td>13.</td>
+                                  <td>HCI-0223</td>
+                                  <td>Captopril</td>
+                                  <td>Rp. 12.500</td>
+                                  <td>Tersedia</td>
+                                  <td>
+                                  <input id="checkbox1"  type="checkbox">Tambah
+                                  </td>
+                              </tr>
+                              <tr>
+                                  <td>14.</td>
+                                  <td>HCI-0244</td>
+                                  <td>Biogesic anak</td>
+                                  <td>Rp. 24.000</td>
+                                  <td>Tersedia</td>
+                                  <td>
+                                  <input id="checkbox1"  type="checkbox">Tambah
+                                  </td>
+                              </tr>
+                              <tr>
+                                  <td>15.</td>
+                                  <td>HCI-0520</td>
+                                  <td>Braito</td>
+                                  <td>Rp. 8.000</td>
+                                  <td>Tersedia</td>
+                                  <td>
+                                  <input id="checkbox1"  type="checkbox">Tambah
+                                  </td>
+                              </tr>
+                              <tr>
+                                  <td>16.</td>
+                                  <td>HCI-0123</td>
+                                  <td>Strepsils</td>
+                                  <td>Rp. 7.000</td>
+                                  <td>Kosong</td>
+                                  <td>
+                                  <input id="checkbox1"  type="checkbox">Tambah
+                                  </td>
+                              </tr>
+                              <tr>
+                                  <td>17.</td>
+                                  <td>HCI-0267</td>
+                                  <td>Nourish skin</td>
+                                  <td>Rp. 155.000</td>
+                                  <td>Tersedia</td>
+                                  <td>
+                                  <input id="checkbox1"  type="checkbox">Tambah
+                                  </td>
+                              </tr>
+                              <tr>
+                                  <td>18.</td>
+                                  <td>HCI-0339</td>
+                                  <td>Melilea</td>
+                                  <td>Rp. 699.500</td>
+                                  <td>Tersedia</td>
+                                  <td>
+                                  <input id="checkbox1"  type="checkbox">Tambah
+                                  </td>
+                              </tr>
+                              <tr>
+                                  <td>19.</td>
+                                  <td>HCI-0345</td>
+                                  <td>Scott's emulsion</td>
+                                  <td>Rp. 44.000</td>
+                                  <td>Tersedia</td>
+                                  <td>
+                                  <input id="checkbox1"  type="checkbox">Tambah
+                                  </td>
+                              </tr>
+                              <tr>
+                                  <td>20.</td>
+                                  <td>HCI-0351</td>
+                                  <td>Dulcolax</td>
+                                  <td>Rp. 4.000</td>
+                                  <td>Tersedia</td>
+                                  <td>
+                                  <input id="checkbox1"  type="checkbox">Tambah
+                                  </td>
+                              </tr>
+                              <tr>
+                                  <td>21.</td>
+                                  <td>HCI-0377</td>
+                                  <td>Redoxon</td>
+                                  <td>Rp. 15.000</td>
+                                  <td>Kosong</td>
+                                  <td>
+                                  <input id="checkbox1"  type="checkbox">Tambah
+                                  </td>
+                              </tr>
+                              <tr>
+                                  <td>22.</td>
+                                  <td>HCI-0392</td>
+                                  <td>Insto</td>
+                                  <td>Rp. 5.000</td>
+                                  <td>Tersedia</td>
+                                  <td>
+                                  <input id="checkbox1"  type="checkbox">Tambah
+                                  </td>
+                              </tr>
+                              <tr>
+                                  <td>23.</td>
+                                  <td>HCI-0393</td>
+                                  <td>Vicks 44</td>
+                                  <td>Rp. 9.500</td>
+                                  <td>Tersedia</td>
+                                  <td>
+                                  <input id="checkbox1"  type="checkbox">Tambah
+                                  </td>
+                              </tr>
+                              <tr>
+                                  <td>24.</td>
+                                  <td>HCI-0421</td>
+                                  <td>Bodrex extra</td>
+                                  <td>Rp. 4.000</td>
+                                  <td>Tersedia</td>
+                                  <td>
+                                  <input id="checkbox1"  type="checkbox">Tambah
+                                  </td>
+                              </tr>
+                              <tr>
+                                  <td>25.</td>
+                                  <td>HCI-0532</td>
+                                  <td>Sanaflu forte</td>
+                                  <td>Rp. 5.000</td>
+                                  <td>Tersedia</td>
+                                  <td>
+                                  <input id="checkbox1"  type="checkbox">Tambah
+                                  </td>
+                              </tr>
+
+                            </tbody>
+                        </table>  
+      
+      </div>
+      <div class="modal-footer"> 
+        <button type="button" class="btn btn-success" data-toggle="modal" data-target="#notifedit" data-dismiss="modal">Simpan</button>
+        <button type="button" class="btn btn-default" data-dismiss="modal">Batal</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- tombol edit -->
+<div class="modal fade" id="notifedit" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+      </div>
+      <div class="modal-body">
+        
+                    <p class="text-center title"> <strong>Data Obat yang dibeli telah ditambah</strong>
+                    </p>
+                   
+
+            <!-- close notif -->
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+       </div>
+            </div>
+        </div>
+
+
     <!-- /.container -->
 
     <footer>
@@ -366,6 +679,28 @@
 
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery-1.11.2.min.js"></script>
+        <script src="bootstrap/js/bootstrap.js"></script>
+        <script src="datatables/jquery.dataTables.js"></script>
+        <script src="datatables/dataTables.bootstrap.js"></script>
+     <script type="text/javascript">
+
+
+            
+
+//            tabel lookup 
+            $(function () {
+                $("#lookup").dataTable();
+            });
+
+            function dummy() {
+                var nim = document.getElementById("nim").value;
+                alert('Nomor Induk Mahasiswa ' + nim + ' berhasil tersimpan');
+                
+                var ket = document.getElementById("ket").value;
+                alert('Keterangan ' + ket + ' berhasil tersimpan');
+            }
+        </script>
 
 
 <!-- Print Preview JS --> 

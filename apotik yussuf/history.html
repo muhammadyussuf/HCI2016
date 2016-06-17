@@ -81,21 +81,11 @@
                         <strong>History</strong>
                     </h2>
                     <hr>
-
-                    <section id="history">
-    <div class="container">
-        <div class="row">
-            
-                </div>
-            </div>
-            <select style="width: 147px">       
-            <option value="Filter" selected="selected" style="display:none;" disabled>Filter</option>
-            <option value="Hari Ini">Hari ini</option>
-            <option value="Kemarin">Kemarin</option>
-            <option value="Seminggu Terakhir">Seminggu Terakhir</option>
-            <option value="Sebulan Terakhir">Sebulan Terakhir</option>
-        </select>
-            <table class="table table-hover">
+<!-- Modal Tambah obat-->
+        
+                    <div class="modal-body">
+                        <table id="lookup" class="table table-bordered table-hover table-striped">
+                        
 
                               <thead>                     
                               <tr>
@@ -110,7 +100,7 @@
                               <tr>
                                   <td>1.</td>
                                   <td>21-04-2016</td>
-                                  <td>Adit</td>
+                                  <td >Adit</td>
                                   <td>Rp. 13.300</td>
                                   <td>
                                   <button type="button" class="btn btn-default" data-toggle="modal" data-target="#myModal">Detail</button>
@@ -127,29 +117,32 @@
                                   </td>
                               </tr>
                               </tbody>                              
-                          </table>
-                          <div align="right">                       
-                                  <ul class="pagination">
-                                    <li>
-                                      <a href="#" aria-label="Previous">
-                                        <span aria-hidden="true">&laquo;</span>
-                                      </a>
-                                    </li>
-                                    <li  class="active"><a href="#">1</a></li>
-                                    <li><a href="#">2</a></li>
-                                    <li><a href="#">3</a></li>
-                                    <li><a href="#">4</a></li>
-                                    <li><a href="#">5</a></li>
-                                    <li>
-                                      <a href="#" aria-label="Next">
-                                        <span aria-hidden="true">&raquo;</span>
-                                      </a>
-                                    </li>
-                                  </ul>
-                                  </div>
+                          </table>  
+
+            
+              
+
+                    </div>
+                    <section id="history">
+    <div class="container">
+        <div class="row">
+            
+                </div>
+            </div>
+            <select style="width: 147px">       
+            <option value="Filter" selected="selected" style="display:none;" disabled>Filter</option>
+            <option value="Hari Ini">Hari ini</option>
+            <option value="Kemarin">Kemarin</option>
+            <option value="Seminggu Terakhir">Seminggu Terakhir</option>
+            <option value="Sebulan Terakhir">Sebulan Terakhir</option>
+        </select>
+            
+                          
         </div>
     </div>      
 </section>
+
+
 <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
@@ -300,6 +293,28 @@
 
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
+      <script src="js/jquery-1.11.2.min.js"></script>
+        <script src="bootstrap/js/bootstrap.js"></script>
+        <script src="datatables/jquery.datTables.js"></script>
+        <script src="datatables/datTables.bootstrap.js"></script>
+        <script type="text/javascript">
+
+
+            
+
+//            tabel lookup 
+            $(function () {
+                $("#lookup").dataTable();
+            });
+
+            function dummy() {
+                var nim = document.getElementById("nim").value;
+                alert('Nomor Induk Mahasiswa ' + nim + ' berhasil tersimpan');
+                
+                var ket = document.getElementById("ket").value;
+                alert('Keterangan ' + ket + ' berhasil tersimpan');
+            }
+        </script>
 
 </body>
 

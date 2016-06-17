@@ -85,7 +85,8 @@
                 <div><button class="btn btn-info" data-toggle="modal" data-target="#tambah" role="button">Tambah Obat</button>
                 <p>&nbsp;</p>
             </div>
- <!-- Modal -->
+ 
+ <!-- Modal Tambah obat-->
         
                     <div class="modal-body">
                         <table id="lookup" class="table table-bordered table-hover table-striped">
@@ -402,17 +403,7 @@
 
                 
 
-<!-- /.container -->
 
-    <footer>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <p>Copyright &copy; Your Website 2014</p>
-                </div>
-            </div>
-        </div>
-    </footer>
                 
     
 
@@ -600,7 +591,17 @@
 </div>
 
 
+<!-- /.container -->
 
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <p>Copyright &copy; Your Website 2014</p>
+                </div>
+            </div>
+        </div>
+    </footer>
 
 
     <!-- jQuery -->
@@ -631,6 +632,20 @@
                 alert('Keterangan ' + ket + ' berhasil tersimpan');
             }
         </script>
+
+<script>
+    $(function () {
+      $("#example1").DataTable();
+      $('#example2').DataTable({
+        "paging": true,
+        "lengthChange": false,
+        "searching": false,
+        "ordering": true,
+        "info": true,
+        "autoWidth": false
+      });
+    });
+  </script>
 
 
 </body>
